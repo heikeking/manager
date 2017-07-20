@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 首页代码结构</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <link href="../assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/page-min.css" rel="stylesheet" type="text/css" />   <!-- 下面的样式，仅是为了显示代码，而不应该在项目中使用-->
+   <link href="../assets/css/prettify.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+  
+    <div class="demo-content">
+    <div class="row">
+      <div class="span16">
+        <div id="grid">
+          
+        </div>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="../assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bui-min.js"></script>
+  <script type="text/javascript" src="../assets/js/config-min.js"></script>
+  <script type="text/javascript" src="../assets/js/prettify.js"></script>
+  <script type="text/javascript">
+      $.ajax({
+          url:"http://localhost:8090/test/test",
+          type:'GET',
+          success:function(res){
+              BUI.use('bui/grid',function(Grid){
+                  var Grid = Grid,
+                      columns = [{
+                          title : '用户id',
+                          dataIndex :'id',
+                      },{
+                          title : '用户名',
+                          dataIndex :'userName',
+                      },{
+                          title : '邮箱地址',
+                          dataIndex : 'email',
+                      }],
+                      data = [{"id":2,"userName":"admin","email":"","normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":15,"userName":"诺怀系统体验","email":"abc123@123.com","normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":19,"userName":"lnld","email":null,"normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":20,"userName":"诺怀系统演示","email":null,"normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":21,"userName":"诺怀系统试用1","email":null,"normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":33,"userName":"标准版","email":null,"normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null},{"id":34,"userName":"收费版","email":null,"normalizedUserName":null,"password":null,"passwordFormat":null,"hashAlgorithm":null,"passwordSalt":null,"registrationStatus":null,"emailStatus":null,"emailChallengeToken":null,"createdUtc":null,"lastLoginUtc":null,"lastLogoutUtc":null}];
+
+                  var grid = new Grid.SimpleGrid({
+                      render:'#grid',
+                      columns : columns,
+                      items : res,
+                      idField : 'a'
+                  });
+                  grid.render();
+              });
+          }}
+      );
+
+    </script>
+
+<body>
+</html>

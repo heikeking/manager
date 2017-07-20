@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dishenghk.dao.ContractListDao">
+    <select id="queryAllUser" resultType="ContractlistEntity">
+        SELECT id,area,contractNumber,contractName,hirer,startTime,endTime,status,remark
+        FROM contractList
+        WHERE Id >= 1
+    </select>
+
+    <select id="selectById" parameterType="int" resultType="ContractlistEntity">
+        select * from contractlist where id = #{id}
+    </select>
+
+    <insert id="Insertlist"  parameterType="ContractlistEntity">
+        INSERT INTO contractList
+        (
+        id,area,contractNumber,contractName,hirer,startTime,endTime,status,remark
+        )
+        VALUES
+        (
+        #{contractlist.id},
+        #{contractlist.area},
+        #{contractlist.contractNumber},
+        #{contractlist.contractName},
+        #{contractlist.hirer},
+        #{contractlist.startTime},
+        #{contractlist.endTime},
+        #{contractlist.status},
+        #{contractlist.remark}
+        )
+    </insert>
+
+    <select id="selectBycid" parameterType="int" resultType="ContractlistEntity">
+        select * from contractList where contractNumber = #{cid}
+    </select>
+
+     <delete id="deleteBycid" parameterType="int">
+        delete from contractList where contractNumber = #{cid}
+     </delete>
+
+    <!--<update id="updateContract" parameterType="ContractlistEntity">-->
+        <!--update contractList set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address} where contractNumber = #{cid}-->
+    <!--</update>-->
+
+
+</mapper>

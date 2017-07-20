@@ -1,0 +1,769 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author"/>
+    <title>诺怀云物管</title>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="/Themes/Metronic2/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="/Themes/Metronic2/assets/global/plugins/select2/css/select2.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/Metronic2/assets/global/plugins/select2/css/select2-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/jstree/dist/themes/proton/style.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-datepaginator/bootstrap-datepaginator.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="/Themes/Metronic2/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="/Themes/Metronic2/assets/admin/layout/css/themes/light.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/Metronic2/assets/admin/pages/css/timeline-old.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <!-- BEGIN KENDOUI STYLES -->
+    <link href="/Themes/Metronic2/assets/kendoui/styles/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/Metronic2/assets/kendoui/styles/kendo.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Themes/Metronic2/assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END KENDOUI STYLES -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script src="/Themes/Metronic2/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="/Themes/Metronic2/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <meta content="Coevery" name="generator" />
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body class="page-header-fixed page-sidebar-fixed page-quick-sidebar-over-content page-container-bg-solid">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href='/' id="a-logo">
+                <img src='/Themes/Metronic2/assets/global/img/logo.png' alt=" logo" class="logo-default" />
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"></a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <div class="main-nav">
+        </div>
+
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="separator hide"></li>
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i class="icon-bell"></i>
+                            <span class="badge badge-success">
+                                5
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu hide">
+                            <li class="external">
+                                <h3><span class="bold">5</span> 消息</h3>
+                                <a href="###">查看所有</a>
+                            </li>
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">物管欠费</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-success">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                5-21-2业主欠费5月
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">业主投诉</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-danger">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                公共区域被占用
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">业主报修登记</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-info">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                门被拗开
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">重大事故</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-warning">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                空中抛物，砸中5岁儿童
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">消防安全</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-danger">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                11-26-2家里冒浓烟
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END NOTIFICATION DROPDOWN -->
+                    <li class="separator hide"></li>
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">
+                                商业版体验
+                            </span>
+                            <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            &nbsp;
+                            <img alt="" class="img-circle" src="/Themes/Metronic2/assets/admin/layout/img/avatar11.jpg" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="/Users/Account/MyProfile">
+                                    <i class="icon-user"></i> 我的资料
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="/Users/Account/LogOff">
+                                    <i class="icon-key"></i> 退出
+                                </a>
+                            </li>
+                            </li>
+                            <li class="divider">
+                            <li>
+                                <a id="aboutSystem">
+                                    <i class="fa fa-copyright"></i> 关于系统
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+    </div>
+    <!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div id="aboutSystemModal" class="modal fade" tabindex="-1">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于系统</h4>
+    </div>
+    <div class="modal-body">
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+    </div>
+</div>
+
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR1 -->
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse">
+            <div class="zone zone-navigation"><!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <!-- BEGIN SIDEBAR MENU1 -->
+
+                <ul class="page-sidebar-menu page-sidebar-menu-light" data-slide-speed="200" data-auto-scroll="false" data-keep-expanded="true">
+                    <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                    <li class="sidebar-search-wrapper">
+                        <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                        <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+                        <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+                        <div class="sidebar-search sidebar-search-bordered">
+                            <a href="javascript:;" class="remove">
+                                <i class="icon-close"></i>
+                            </a>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="sidebar-search-box" placeholder="查找菜单...">
+                                <span class="input-group-btn">
+                    <a href="javascript:;" class="btn"><i class="icon-close"></i></a>
+                </span>
+                            </div>
+                        </div>
+                        <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                    </li>
+                    <li class="start menu-link">
+                        <a class="ajaxify start" href="/">
+                            <i class="fa fa-home"></i>
+                            <span class="title">
+                首页
+            </span>
+                            <span class="selected">
+            </span>
+                        </a>
+                    </li>
+
+                    <li class="active">    <a href="javascript:void;" >
+                        <i class="icon-home"></i>
+                        <span class="title">收费管理</span>
+                        <span class="arrow open"></span>
+                    </a>
+
+                        <ul class="sub-menu"   style="display: block;" >
+                            <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PayNavigation" class="ajaxify">
+                                <i class="icon-home"></i>收费导航                 </a>
+
+                            </li><li class="open">                <a href="javascript:void;" >
+                            <i class="icon-home"></i>前台收费 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu"   style="display: block;" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeFeesWizard" class="ajaxify">
+                                    <i class="icon-home"></i>日常收费                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CustomerAccount" class="ajaxify">
+                                <i class="icon-home"></i>预收费                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/TemporaryCharge" class="ajaxify">
+                                <i class="icon-home"></i>经营性收费                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/AccountStatement" class="ajaxify">
+                                <i class="icon-home"></i>交款申请                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PaymentHistory" class="ajaxify">
+                                <i class="icon-home"></i>收费历史记录                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/InvalidTicket" class="ajaxify">
+                                <i class="icon-home"></i>损毁票据登记                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/DayPaymentHistoryReport" class="ajaxify">
+                                <i class="icon-home"></i>已收费用日报                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CustomerSmallChangeAccount" class="ajaxify">
+                                <i class="icon-home"></i>客户零头账户明细                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>应收管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ReceivableListDetailReport" class="ajaxify">
+                                    <i class="icon-home"></i>已出账单                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/GenerateBill" class="ajaxify">
+                                <i class="icon-home"></i>未出账单                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/FeeDiscount" class="ajaxify">
+                                <i class="icon-home"></i>费用减免                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CostAllocation" class="ajaxify">
+                                <i class="icon-home"></i>房间固定金额分摊                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>抄表管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/MeterType" class="ajaxify">
+                                    <i class="icon-home"></i>仪表类型                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/HouseMeter" class="ajaxify">
+                                <i class="icon-home"></i>房间仪表管理                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/HouseMeterReading" class="ajaxify">
+                                <i class="icon-home"></i>房间仪表抄表                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PublicMeter" class="ajaxify">
+                                <i class="icon-home"></i>公摊仪表管理                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PublicMeterData" class="ajaxify">
+                                <i class="icon-home"></i>公摊仪表抄表录入                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>退款管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Deposit" class="ajaxify">
+                                    <i class="icon-home"></i>新建退款                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Refund" class="ajaxify">
+                                <i class="icon-home"></i>退款历史记录                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>收费参数设置 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeItemCategory" class="ajaxify">
+                                    <i class="icon-home"></i>收费项目类别                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeItemType" class="ajaxify">
+                                <i class="icon-home"></i>收费项目定义                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeItem" class="ajaxify">
+                                <i class="icon-home"></i>收费标准设置                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/HouseChargeSetting" class="ajaxify">
+                                <i class="icon-home"></i>绑定收费标准                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/AutoGenerateBillSetting" class="ajaxify">
+                                <i class="icon-home"></i>自动账单日设置                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>财务管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li>                <a href="javascript:void;" >
+                                    <i class="icon-home"></i>票据管理 <span class="arrow"></span>                </a>
+
+                                    <ul class="sub-menu" >
+                                        <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Ticket" class="ajaxify">
+                                            <i class="icon-home"></i>票据本管理                 </a>
+
+                                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CurrentUsedTicket" class="ajaxify">
+                                        <i class="icon-home"></i>当前在用票据                 </a>
+
+                                    </li>    </ul>
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/AccountStatement" class="ajaxify">
+                                <i class="icon-home"></i>交款审批                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>财务汇总统计报表 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li>                <a href="javascript:void;" >
+                                    <i class="icon-home"></i>费用报表 <span class="arrow"></span>                </a>
+
+                                    <ul class="sub-menu" >
+                                        <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ComprehensiveFinancialReport" class="ajaxify">
+                                            <i class="icon-home"></i>综合报表                 </a>
+
+                                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CashPayDetailReport" class="ajaxify">
+                                        <i class="icon-home"></i>现金收款明细                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/AdvancePayDetailReport" class="ajaxify">
+                                        <i class="icon-home"></i>预收转实收明细                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/WeChatPayDetailReport" class="ajaxify">
+                                        <i class="icon-home"></i>微信支付明细                 </a>
+
+                                    </li><li class="menu-link">                <a href="/BankAutoPayment/BankAutoPayReport" class="ajaxify">
+                                        <i class="icon-home"></i>银行托收明细                 </a>
+
+                                    </li>    </ul>
+                                </li><li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>月报表 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ReceivableMonthReport" class="ajaxify">
+                                        <i class="icon-home"></i>应收月度统计                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/OwningMonthReport" class="ajaxify">
+                                    <i class="icon-home"></i>欠费月度统计                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/MonthPaymentHistoryReport" class="ajaxify">
+                                    <i class="icon-home"></i>已收费用月统计                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeMonthReport" class="ajaxify">
+                                    <i class="icon-home"></i>收入月度分摊                 </a>
+
+                                </li>    </ul>
+                            </li><li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>年度报表 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ReceivableYearReport" class="ajaxify">
+                                        <i class="icon-home"></i>应收年度统计                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/OwningYearReport" class="ajaxify">
+                                    <i class="icon-home"></i>欠费年度统计                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeYearReport" class="ajaxify">
+                                    <i class="icon-home"></i>已收费用年度统计                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ChargeYearRateReport" class="ajaxify">
+                                    <i class="icon-home"></i>收费率年度统计                 </a>
+
+                                </li>    </ul>
+                            </li><li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>欠费统计 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/OwningMonthReport" class="ajaxify">
+                                        <i class="icon-home"></i>欠费月度统计                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/OwningYearReport" class="ajaxify">
+                                    <i class="icon-home"></i>欠费年度统计                 </a>
+
+                                </li>    </ul>
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/AdvancePaymentIncomeAndPaidReport" class="ajaxify">
+                                <i class="icon-home"></i>预付款收支明细                 </a>
+
+                            </li><li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>押金统计 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/DepositChargeReport" class="ajaxify">
+                                        <i class="icon-home"></i>押金收退汇总                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/DepositChargeDetailReport" class="ajaxify">
+                                    <i class="icon-home"></i>押金收退明细                 </a>
+
+                                </li>    </ul>
+                            </li>    </ul>
+                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PrintFeeNotice" class="ajaxify">
+                            <i class="icon-home"></i>打印房间费用通知单                 </a>
+
+                        </li>    </ul>
+                    </li>
+                    <li>    <a href="javascript:void;" >
+                        <i class="icon-home"></i>
+                        <span class="title">客户服务</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                        <ul class="sub-menu" >
+                            <li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>装修管理 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.CustomerService/Decorate" class="ajaxify">
+                                        <i class="icon-home"></i>装修登记                 </a>
+
+                                    </li>    </ul>
+                            </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>报事报修 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.CustomerService/RepairService" class="ajaxify">
+                                    <i class="icon-home"></i>报事报修管理                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.CustomerService/Dispatch" class="ajaxify">
+                                <i class="icon-home"></i>派工单管理                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.CustomerService/CustomerServiceReport" class="ajaxify">
+                                <i class="icon-home"></i>汇总统计                 </a>
+
+                            </li>    </ul>
+                        </li><li class="menu-link">                <a href="/Coevery.CustomerService/ComplaintHandle" class="ajaxify">
+                            <i class="icon-home"></i>客户投诉                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.CustomerService/CustomerReturnVisit" class="ajaxify">
+                            <i class="icon-home"></i>客户回访                 </a>
+
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>车位租赁 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.CustomerService/CarParkingRegistration" class="ajaxify">
+                                    <i class="icon-home"></i>租赁办理                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.CustomerService/ParkingPlaceDiscount" class="ajaxify">
+                                <i class="icon-home"></i>租赁折扣                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.CustomerService/PauseParkingPlace" class="ajaxify">
+                                <i class="icon-home"></i>租赁报停                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.CustomerService/CarParkingPlaceReport" class="ajaxify">
+                                <i class="icon-home"></i>车位状态查询                 </a>
+
+                            </li>    </ul>
+                        </li>    </ul>
+                    </li>
+                    <li>    <a href="javascript:void;" >
+                        <i class="icon-home"></i>
+                        <span class="title">房屋租赁合同管理</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                        <ul class="sub-menu" >
+                            <li class="menu-link">                <a href="/Coevery.Contract/Contract" class="ajaxify">
+                                <i class="icon-home"></i>合同列表                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.Contract/Contract/SuperDelete" class="ajaxify">
+                            <i class="icon-home"></i>销毁合同                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.Contract/GenerateContractBill" class="ajaxify">
+                            <i class="icon-home"></i>生成合同费用                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.Contract/ContractCharge" class="ajaxify">
+                            <i class="icon-home"></i>合同收费                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.Contract/ContractExpiredWarning" class="ajaxify">
+                            <i class="icon-home"></i>合同到期预警列表                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.Contract/ContractFeeNotice" class="ajaxify">
+                            <i class="icon-home"></i>合同收费催费单列表                 </a>
+
+                        </li>    </ul>
+                    </li>
+                    <li>    <a href="javascript:void;" >
+                        <i class="icon-home"></i>
+                        <span class="title">基础信息</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                        <ul class="sub-menu" >
+                            <li>                <a href="javascript:void;" >
+                                <i class="icon-home"></i>房产管理 <span class="arrow"></span>                </a>
+
+                                <ul class="sub-menu" >
+                                    <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Building" class="ajaxify">
+                                        <i class="icon-home"></i>楼宇档案                 </a>
+
+                                    </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/House" class="ajaxify">
+                                    <i class="icon-home"></i>房产档案                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/HousesummaryReport" class="ajaxify">
+                                    <i class="icon-home"></i>房产状态统计                 </a>
+
+                                </li>    </ul>
+                            </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>客户管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Customer" class="ajaxify">
+                                    <i class="icon-home"></i>客户档案                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/HandOverHouse" class="ajaxify">
+                                <i class="icon-home"></i>交房登记                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ReceiveHouse" class="ajaxify">
+                                <i class="icon-home"></i>接房登记                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/CustomerCheckIn" class="ajaxify">
+                                <i class="icon-home"></i>入住登记                 </a>
+
+                            </li>    </ul>
+                        </li><li>                <a href="javascript:void;" >
+                            <i class="icon-home"></i>车位管理 <span class="arrow"></span>                </a>
+
+                            <ul class="sub-menu" >
+                                <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Carbarn" class="ajaxify">
+                                    <i class="icon-home"></i>车库档案                 </a>
+
+                                </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/ParkingPlace" class="ajaxify">
+                                <i class="icon-home"></i>车位档案                 </a>
+
+                            </li>    </ul>
+                        </li>    </ul>
+                    </li>
+                    <li>    <a href="javascript:void;" >
+                        <i class="icon-home"></i>
+                        <span class="title">系统管理</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                        <ul class="sub-menu" >
+                            <li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Company" class="ajaxify">
+                                <i class="icon-home"></i>组织机构                 </a>
+
+                            </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/Staff" class="ajaxify">
+                            <i class="icon-home"></i>用户管理                 </a>
+
+                        </li><li class="menu-link">                <a href="/Roles/Role" class="ajaxify">
+                            <i class="icon-home"></i>权限管理                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/PrintTemplate" class="ajaxify">
+                            <i class="icon-home"></i>打印设置                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/FastInitialization" class="ajaxify">
+                            <i class="icon-home"></i>系统初始化                 </a>
+
+                        </li><li class="menu-link">                <a href="/WeChat/WeChat/WeChatConfig" class="ajaxify">
+                            <i class="icon-home"></i>微信配置管理                 </a>
+
+                        </li><li class="menu-link">                <a href="/Coevery.PropertyManagementSystem/DecimalDigitSetting" class="ajaxify">
+                            <i class="icon-home"></i>系统参数设置                 </a>
+
+                        </li>    </ul>
+                    </li></ul>
+                <!-- END SIDEBAR MENU1 --></div>
+        </div>
+    </div>
+    <!-- END SIDEBAR1 -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-content-body">
+                <!-- HERE WILL BE LOADED AN AJAX CONTENT -->
+                <!-- BEGIN PAGE HEADER-->
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="#">我的首页</a>
+                        </li>
+                    </ul>
+                    <div class="page-toolbar">
+                    </div>
+                </div>
+                <h3 class="page-title">
+                    欢迎使用! <small></small>
+                </h3>
+                <!-- END PAGE HEADER-->
+                <!-- BEGIN PAGE CONTENT-->
+                <div class="row">
+                </div>
+
+            </div>
+        </div>
+        <!-- BEGIN CONTENT -->
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="/Themes/Metronic2/assets/global/plugins/respond.min.js"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/moment/moment-with-locales.js" type="text/javascript"></script>
+<script type="text/javascript">moment.locale("zh-CN");</script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-pjax/jquery.pjax.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootbox/bootbox.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/handlebars-v3.0.3.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/router/signals.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/router/hasher.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/router/crossroads.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/select2/js/select2.full.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/select2/js/i18n/zh-CN.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jstree/dist/jstree.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-datepaginator/bootstrap-datepaginator.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/validator/validator.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-scrollbar/jquery.scrollbar.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-validation/js/jquery.validate.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/kendoui/js/kendo.all.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/kendoui/js/jszip.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/kendoui/js/messages/kendo.messages.zh-CN.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/kendoui/js/cultures/kendo.culture.zh-CN.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+<script src="/Themes/Metronic2/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/admin/layout/scripts/sidebar-search.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/kendo.grid.extension.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/highcharts/highcharts.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/highcharts/exporting.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/base64/base64.min.js" type="text/javascript"></script>
+<script src="/Themes/Metronic2/assets/global/plugins/jquery-numeric/jquery.numeric.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    kendo.culture("zh-CN");
+    History.emulated = { pushState: true, hashChange: true};
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core components
+        Metronic.setAssetsPath("/Themes/Metronic2/assets/");
+        Layout.init(); // init current layout
+        SidebarSearch.init();
+        //$('.page-sidebar .ajaxify.start').click(); // load the content for the dashboard page.
+    });
+    function ajaxAlert(message, type) {
+        Metronic.alert({
+            container: '#alerts', // alerts parent container(by default placed after the page breadcrumbs)
+            place: 'append', // append or prepent in container [prepend]
+            type: type,  // alert's type[success,danger,Warning,Info]
+            message: message,// alert's message
+            close: true, // make alert closable
+            reset: true, // close all previouse alerts first
+            focus: true, // auto scroll to the alert after shown
+            closeInSeconds: 15, // auto close after defined seconds
+            icon: '' // put icon before the message [warning,check,user]
+        });
+    }
+</script>
+<script>
+    $(function() {
+        $('#aboutSystem').click(function () {
+            $('#aboutSystemModal').modal('show');
+            $('#aboutSystemModal .modal-body').load('/Users/Account/AboutSystem');
+        });
+    });
+</script>
+
+
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

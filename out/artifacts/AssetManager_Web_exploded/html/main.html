@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 资产管理系统</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+
+  <div class="header">
+    
+      <div class="dl-title">
+
+          <span class="lp-title-port">资产管理系统</span>
+        </a>
+      </div>
+
+    <div class="dl-log">欢迎您，<span class="dl-log-user">资产管理系统</span><a href="###" title="退出系统" class="dl-log-quit">[退出]</a>
+    </div>
+  </div>
+   <div class="content">
+    <div class="dl-main-nav">
+      <div class="dl-inform"><div class="dl-inform-title">贴心小秘书<s class="dl-inform-icon dl-up"></s></div></div>
+      <ul id="J_Nav"  class="nav-list ks-clear">
+        <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">首页</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-order">租赁合同管理</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-inventory">收费管理</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-supplier">基础信息</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-marketing">系统管理</div></li>
+      </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+   </div>
+  <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/bui.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+
+  <script>
+
+    BUI.use('common/main',function(){
+      var config = [{
+          id:'menu',
+          homePage : 'code',
+          menu:[{
+              text:'合同管理',
+              items:[
+                {id:'code',text:'合同列表',href:'main/code.html',closeable : false},
+                {id:'main-menu',text:'生成合同费用',href:'main/menu.html'},
+                {id:'second-menu',text:'合同收费',href:'main/second-menu.html'},
+                {id:'dyna-menu',text:'合同到期预警',href:'main/dyna-menu.html'},
+                  {id:'dyna-menu',text:'合同收费催费单',href:'main/dyna-menu.html'},
+
+
+              ]
+            }]
+          },{
+            id:'form',
+            menu:[{
+                text:'合同管理',
+                items:[
+                    {id:'code',text:'合同列表',href:'main/code.html',closeable : false},
+                    {id:'main-menu',text:'生成合同费用',href:'main/menu.html'},
+                    {id:'second-menu',text:'合同收费',href:'main/second-menu.html'},
+                    {id:'dyna-menu',text:'合同到期预警',href:'main/dyna-menu.html'},
+                    {id:'dyna-menu',text:'合同收费催费单',href:'main/dyna-menu.html'}
+                ]
+              }]
+          },{
+            id:'search',
+            menu:[{
+                text:'前台收费',
+                items:[
+                  {id:'code',text:'日常收费',href:'search/code.html'},
+                  {id:'example',text:'预收费',href:'search/example.html'},
+                  {id:'example-dialog',text:'交款申请',href:'search/example-dialog.html'},
+                  {id:'introduce',text:'已收费用日报',href:'search/introduce.html'},
+                  {id:'config',text:'搜索配置',href:'search/config.html'}
+                ]
+              },{
+                text : '应收管理',
+                items : [
+                  {id : 'tab',text : '已出账单',href : 'search/tab.html'},
+                    {id : 'tab',text : '费用减免',href : 'search/tab.html'},
+                ]
+              },
+                {
+                    text : '抄表管理',
+                    items : [
+                        {id : 'tab',text : '仪表管理',href : 'search/tab.html'},
+                        {id : 'tab',text : '房间仪表管理',href : 'search/tab.html'},
+                        {id : 'tab',text : '仪表抄表',href : 'search/tab.html'},
+                        {id : 'tab',text : '公摊仪表管理',href : 'search/tab.html'},
+                        {id : 'tab',text : '公摊仪表抄表',href : 'search/tab.html'}
+                    ]
+                },
+                {
+                    text : '收费标准设置',
+                    items : [
+                        {id : 'tab',text : '收费项目定义',href : 'search/tab.html'},
+                        {id : 'tab',text : '收费标准设置',href : 'search/tab.html'},
+                        {id : 'tab',text : '绑定收费标准',href : 'search/tab.html'},
+                        {id : 'tab',text : '公摊仪表管理',href : 'search/tab.html'},
+                        {id : 'tab',text : '公摊仪表抄表',href : 'search/tab.html'}
+                    ]
+                },
+                {
+                    text : '财务管理',
+                    href : 'search/tab.html'
+
+                },
+
+                {
+                    text : '财务报表统计',
+                    items:[
+                        {id:'code',text:'月报表',href:'detail/code.html'},
+                        {id:'example',text:'年度报表',href:'detail/example.html'},
+                        {id:'introduce',text:'预付款收支明细',href:'detail/introduce.html'},
+                        {id:'introduce',text:'押金统计',href:'detail/introduce.html'}
+                    ]
+
+
+                }
+
+            ]
+          },{
+            id:'detail',
+            menu:[{
+                text:'房产管理',
+                items:[
+                  {id:'code',text:'楼宇档案',href:'detail/code.html'},
+                  {id:'example',text:'房间档案',href:'detail/example.html'},
+                  {id:'introduce',text:'房间状态统计',href:'detail/introduce.html'}
+                ]
+              },
+                {
+                    text:'客户管理',
+                    items:[
+                        {id:'code',text:'客户档案',href:'detail/code.html'},
+                        {id:'example',text:'入住登记',href:'detail/example.html'},
+                    ]
+                }]
+          },{
+            id : 'chart',
+            menu : [{
+              text : '系统管理',
+              items:[
+                  {id:'code',text:'用户管理',href:'chart/code.html'},
+                  {id:'line',text:'权限管理',href:'chart/line.html'},
+                  {id:'area',text:'系统其他参数管理',href:'chart/area.html'},
+
+              ]
+            }]
+          }];
+      new PageUtil.MainPage({
+        modulesConfig : config
+      });
+    });
+  </script>
+ </body>
+</html>
